@@ -1,0 +1,35 @@
+@media screen and (max-width:320px) {
+    .intro-h1 {
+        /* top: 20%; */
+        font-size: 1.6rem;
+    }
+
+    
+
+    .btn {
+        font-size: 1.4rem;
+        padding: 1.5rem 6rem;
+    }
+}
+
+@media screen and (max-width:360px) {
+    .nav-ul li a {
+        font-size: 1.4rem;
+    }
+
+    .intro-img img {
+        width: 30rem;
+    }
+}
+
+@media screen and (max-width:375px) {
+    .intro-h1 {
+        /* top: 70%; */
+    }
+}
+
+/* @media screen and (min-width:375px) and (max-width:420px) {
+    .intro-h1 {
+        top: 55%;
+    }
+} */
