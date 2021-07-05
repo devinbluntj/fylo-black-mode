@@ -24,18 +24,43 @@ html {
 
 body {
     width: 100%;
+    overflow: auto;
+}
+
+main {
+    background-color: var(--Main);
 }
 
 h1 {
     font-size: 2.5rem;
     font-family: 'Raleway', sans-serif;
     font-weight: 700;
+    color: var(--White);
+    line-height: 1.5em;
+}
+
+h2 {
+    font-size: 2.2rem;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    color: var(--White);
+    line-height: 1.5em;
+}
+
+h4 {
+    font-size: 1.4rem;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    color: var(--White);
+    line-height: 1.5em;
 }
 
 p {
     font-size: 1.4rem;
     font-weight: 400;
     font-family: 'Open Sans', sans-serif;
+    color: var(--White);
+    line-height: 1.5em;
 }
 
 /* ---- VARIABLES ---- */
@@ -123,8 +148,7 @@ nav {
     text-align: center;
     padding: 0 2rem;
     position: absolute;
-    top: 50%;
-    color: var(--White);
+    top: 55%;
 }
 
 .desktop-curve {
@@ -141,7 +165,6 @@ nav {
     background-color: var(--Main);
     text-align: center;
     width: 100%;
-    color: var(--White);
 }
 
 .btn {
@@ -154,9 +177,237 @@ nav {
     margin: 2rem 0;
     background: linear-gradient(var(--Cyan), var(--Blue));
     font-family: 'Open Sans', sans-serif;
+    cursor: pointer;
 }
 
 
+/* ---- FEATURES SECTION ---- */
+/* ---- FEATURES SECTION ---- */
+/* ---- FEATURES SECTION ---- */
+
+.features-section {
+    width: 100%;
+    padding: 8rem 0 10rem 0;
+}
+
+.feature {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 3.5rem;
+}
+
+.feature-txt {
+    text-align: center;
+}
+
+.feature-txt h2 {
+    padding-bottom: 1.5rem;
+}
+
+.feature:not(:last-child) {
+    padding-bottom: 5rem;
+}
+
+.feature-img {
+    padding-bottom: 3rem;
+}
 
 
+/* ---- PURPOSE SECTION ---- */
+/* ---- PURPOSE SECTION ---- */
+/* ---- PURPOSE SECTION ---- */
 
+.purpose-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    position: relative;
+}
+
+.purpose-img img {
+    width: 35rem;
+    padding-bottom: 4rem;
+}
+
+.purpose-txt {
+    padding: 0 2.5rem;
+}
+
+.purpose-txt h2,
+.purpose-txt p:not(:last-child) {
+    padding-bottom: 2rem;
+}
+
+.purpose-link {
+    display: flex;
+    gap: 1.2rem;
+}
+
+.purpose-link a {
+    font-size: 1.4rem;
+    text-decoration: none;
+    color: var(--Cyan);
+}
+
+.purpose-link::after {
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 6%;
+    width: 15rem;
+    height: .25rem;
+    background-color: var(--Cyan);
+}
+
+
+/* ---- COMMENTS SECTION ---- */
+/* ---- COMMENTS SECTION ---- */
+/* ---- COMMENTS SECTION ---- */
+
+.comments {
+    padding: 4rem;
+}
+
+.comments img {
+    width: 2.5rem;
+}
+
+.commentor {
+    background-color: var(--Testimonial);
+    padding: 2.5rem;
+    border-radius: 1rem;
+}
+
+.commentor:not(:last-child) {
+    margin-bottom: 2rem;
+}
+
+.commentor p {
+    font-size: 1.2rem;
+}
+
+.commentor p:not(:last-child) {
+    padding-bottom: 2rem;
+}
+
+.commentor-details {
+    display: flex;
+    gap: 1rem;
+}
+
+.commentor-details img {
+    width: 3.5rem;
+    border-radius: 50%;
+}
+
+.details h4 {
+    line-height: 1.5em;
+}
+
+.details p {
+    font-size: 1.2rem;
+}
+
+/* ---- FORM SECTION ---- */
+/* ---- FORM SECTION ---- */
+/* ---- FORM SECTION ---- */
+
+.form-section {
+    background-color: var(--IES);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 2rem;
+    padding: 5rem 2rem 2.5rem 2rem;
+    border-radius: 1rem;
+    transform: translateY(50%);
+}
+
+.form-txt {
+    text-align: center;
+}
+
+.form-txt h2,
+.form-txt p {
+    padding-bottom: 2.5rem;
+}
+
+.input,
+.other-btn {
+    width: 30rem;
+    border-radius: 3rem;
+}
+
+.input {
+    padding: 2rem 0 2rem 3rem;
+    margin-bottom: 2rem;
+    border: 1px solid transparent;
+}
+.other-btn {
+    padding: 1.75rem;
+    color: var(--White);
+    font-size: 1.8rem;
+    border: 1px solid transparent;
+    font-weight: 400;
+    background: linear-gradient(var(--Cyan), var(--Blue));
+    font-family: 'Open Sans', sans-serif;
+    cursor: pointer;
+}
+
+
+/* ---- FOOTER SECTION ---- */
+/* ---- FOOTER SECTION ---- */
+/* ---- FOOTER SECTION ---- */
+
+.footer-section {
+    background-color: var(--Footer);
+    width: 100%;
+}
+
+.footer-logo-img {
+    margin-top: 25rem;
+    padding-left: 4rem;
+}
+
+.location {
+    padding-bottom: 2rem;
+}
+
+.footer-cont {
+    padding: 5rem 2.5rem;
+}
+
+.footer-flex {
+    display: flex;
+    gap: 2rem;
+    padding-bottom: 3rem;
+}
+
+.fm-p {
+    font-size: 1.85rem;
+    padding-bottom: 2rem;
+}
+
+.footer-menu1 {
+    padding-top: 8rem;
+    padding-bottom: 5rem;
+}
+
+.footer-links {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.footer-links li {
+    padding-bottom: 1.5rem;
+}
+
+.footer-icons {
+    padding-top: 5rem;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
