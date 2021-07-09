@@ -34,7 +34,7 @@
 
   <main>
     <section class="intro-section">
-      <div class="intro-img">
+      <div class="intro-img slideUP">
         <img src="./images/illustration-intro.png" alt="">
       </div>
 
@@ -56,7 +56,7 @@
       </section>
 
       <section class="features-section">
-        <div class="feature">
+        <div class="feature slideLEFT">
           <div class="feature-img">
             <img src="./images/icon-access-anywhere.svg" alt="">
           </div>
@@ -71,7 +71,7 @@
           </div>
         </div>
 
-        <div class="feature">
+        <div class="feature slideRIGHT">
           <div class="feature-img">
             <img src="./images/icon-security.svg" alt="">
           </div>
@@ -86,7 +86,7 @@
           </div>
         </div>
 
-        <div class="feature">
+        <div class="feature slideLEFT">
           <div class="feature-img">
             <img src="./images/icon-collaboration.svg" alt="">
           </div>
@@ -101,7 +101,7 @@
           </div>
         </div>
 
-        <div class="feature">
+        <div class="feature slideRIGHT">
           <div class="feature-img">
             <img src="./images/icon-any-file.svg" alt="">
           </div>
@@ -136,14 +136,17 @@
           <div class="purpose-link">
             <a href="#">See how Fylo works</a>
             <img src="./images/icon-arrow.svg" alt="">
+            
           </div>
+          <div class="line"></div>
         </div>
        </section>
 
        <section class="comments-section">
         <div class="comments">
-          <img src="./images/bg-quotes.png" alt="">
-          
+        
+          <img src="./images/bg-quotes.png" alt="" class="quot-mark">
+        <div class="cc">  
           <div class="commentor">
             <p>
               Fylo has improved our team productivity by an order of magnitude. Since making the switch our team has 
@@ -161,7 +164,9 @@
               </div>
             </div>
           </div>
+        
 
+       
           <div class="commentor">
             <p>
               Fylo has improved our team productivity by an order of magnitude. Since making the switch our team has 
@@ -179,6 +184,7 @@
               </div>
             </div>
           </div>
+        
 
           <div class="commentor">
             <p>
@@ -197,6 +203,9 @@
               </div>
             </div>
           </div>
+
+        </div>
+          
         </div>
        </section>
 
@@ -211,10 +220,10 @@
           </p>
         </div>
         
-        
-          <input type="email" name="email" placeholder="dev_ace@example.com" class="input both">
-          <button class="other-btn">Get Started For Free</button>
-      
+        <form action="#">
+          <input type="email" name="email" placeholder="dev_ace@example.com" class="input" required>
+          <input type="submit" value="Get Started For Free" class="other-btn">
+        </form>
        </section>
   </main>
   
